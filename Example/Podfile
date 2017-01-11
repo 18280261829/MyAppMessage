@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'CardanMessage_Example' do
   pod 'CardanMessage', :path => '../'
+  pod 'CTMediator'
 
   target 'CardanMessage_Tests' do
     inherit! :search_paths

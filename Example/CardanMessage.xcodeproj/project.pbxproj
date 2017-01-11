@@ -20,6 +20,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		742D21261E25C966003D3B50 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 742D21251E25C966003D3B50 /* test.m */; };
 		7DD694DA3CDE9754A4C070D4 /* Pods_CardanMessage_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAB2BE06FA5E6673DB5E9E6 /* Pods_CardanMessage_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		AAB03EECB940F927DD0DA243 /* Pods_CardanMessage_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37DD87C6278EBD2AE876D58F /* Pods_CardanMessage_Example.framework */; };
@@ -37,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		0D7F5D50DD845DCF52F35BB6 /* Pods-CardanMessage_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardanMessage_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardanMessage_Example/Pods-CardanMessage_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2CC8D5164BAC4A8B7A4BEF54 /* CardanMessage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CardanMessage.podspec; path = ../CardanMessage.podspec; sourceTree = "<group>"; };
+		2CC8D5164BAC4A8B7A4BEF54 /* CardanMessage.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CardanMessage.podspec; path = ../CardanMessage.podspec; sourceTree = "<group>"; };
 		2EAB2BE06FA5E6673DB5E9E6 /* Pods_CardanMessage_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardanMessage_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37DD87C6278EBD2AE876D58F /* Pods_CardanMessage_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardanMessage_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* CardanMessage_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardanMessage_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,8 +51,8 @@
 		6003F59B195388D20070C39A /* CardanMessage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CardanMessage-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* CardanMessageAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardanMessageAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* CardanMessageAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardanMessageAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* CardanMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardanMessageViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* CardanMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardanMessageViewController.m; sourceTree = "<group>"; };
+		6003F5A5195388D20070C39A /* CardanMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CardanMessageViewController.h; path = ../../CardanMessageViewController.h; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* CardanMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CardanMessageViewController.m; path = ../../CardanMessageViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* CardanMessage_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardanMessage_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -59,11 +60,13 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6670E2BA9ABF812D8F15ED7A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6670E2BA9ABF812D8F15ED7A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7332813DD65F6A6F69ACA647 /* Pods-CardanMessage_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardanMessage_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardanMessage_Example/Pods-CardanMessage_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		742D21241E25C966003D3B50 /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		742D21251E25C966003D3B50 /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
 		83F855F5ECB62BDDF706C43B /* Pods-CardanMessage_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardanMessage_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CardanMessage_Tests/Pods-CardanMessage_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		B004707EC2587DC6211DF97B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B004707EC2587DC6211DF97B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DD5A0CE88BD840C57D5EEEAB /* Pods-CardanMessage_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardanMessage_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CardanMessage_Tests/Pods-CardanMessage_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,11 +133,10 @@
 		6003F593195388D20070C39A /* Example for CardanMessage */ = {
 			isa = PBXGroup;
 			children = (
+				747D61201E25C22C007937AD /* Message */,
 				6003F59C195388D20070C39A /* CardanMessageAppDelegate.h */,
 				6003F59D195388D20070C39A /* CardanMessageAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* CardanMessageViewController.h */,
-				6003F5A6195388D20070C39A /* CardanMessageViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -180,6 +182,33 @@
 				B004707EC2587DC6211DF97B /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		742D21191E25C42A003D3B50 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		742D211B1E25C42A003D3B50 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5A5195388D20070C39A /* CardanMessageViewController.h */,
+				6003F5A6195388D20070C39A /* CardanMessageViewController.m */,
+				742D21241E25C966003D3B50 /* test.h */,
+				742D21251E25C966003D3B50 /* test.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		747D61201E25C22C007937AD /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				742D21191E25C42A003D3B50 /* Assets */,
+				742D211B1E25C42A003D3B50 /* Classes */,
+			);
+			path = Message;
 			sourceTree = "<group>";
 		};
 		809E0110C4380C0104DD7EEC /* Pods */ = {
@@ -391,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* CardanMessageAppDelegate.m in Sources */,
+				742D21261E25C966003D3B50 /* test.m in Sources */,
 				6003F5A7195388D20070C39A /* CardanMessageViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -516,6 +546,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CardanMessage/CardanMessage-Prefix.pch";
 				INFOPLIST_FILE = "CardanMessage/CardanMessage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,6 +563,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CardanMessage/CardanMessage-Prefix.pch";
 				INFOPLIST_FILE = "CardanMessage/CardanMessage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
